@@ -1,7 +1,7 @@
 import { mkdir } from "node:fs"
 import { Log } from "."
 
-export default function errorHandler (error: ErrnoException, logPath: string, createLog: Log)
+export default function errorHandler (error: NodeJS.ErrnoException, logPath: string, createLog: Log)
 {
     if ( error.code === "ENOENT" ) { //if the logs directory does not exist, create it.
         mkdir (logPath, { mode: "0700" },(error) => {

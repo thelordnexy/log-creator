@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from "node:fs"
+import { writeFile } from "node:fs"
 import { join } from "node:path"
 import errorHandler from "./errorHandler"
 
