@@ -1,0 +1,4 @@
+import { errorLog, requestLog } from ".";
+
+errorLog("Test", "Test", "A random test of error log")
+requestLog("localhost", "/test", "TEST")
