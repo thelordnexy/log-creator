@@ -1,2 +1,2 @@
 export {default} from "./src/logger"
-export * from "./src/types"
+export * from "./src/types.d"
