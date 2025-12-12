@@ -1,7 +1,7 @@
-export type loggertype = {
-    (_code: string, _name: string, _log: string, _source: string ): void
+export type idGen = {
+    (): string
 }
 
-export type timestampGen = {
-    (): string
+export type loggerLogFunction = {
+    (): void
 }
